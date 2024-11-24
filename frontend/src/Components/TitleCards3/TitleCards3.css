@@ -1,0 +1,110 @@
+/* TitleCards3 container styling */
+.title-cards {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.title-cards h2 {
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+}
+
+/* Card List styling for horizontal scrolling */
+.card-list {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll; /* Enables horizontal scrolling */
+    padding-bottom: 10px; /* Space at the bottom for scrollbar */
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+
+.card-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Card styling */
+.card {
+    background-color: #111;
+    min-width: 150px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    color: #e5e5e5;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-info {
+    padding: 10px;
+}
+
+.card-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.card-year {
+    font-size: 0.8rem;
+    color: #aaa;
+    margin-bottom: 5px;
+}
+
+/* Card stats for likes, views, and rating */
+.card-stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.8rem;
+    color: #e5e5e5;
+}
+.video-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .video-modal iframe {
+    width: 80%;
+    height: 80%;
+  }
+  
+  .back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: bold;
+   
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .back-button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
